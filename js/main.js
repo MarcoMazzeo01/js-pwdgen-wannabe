@@ -2,7 +2,14 @@
 const pwEnd = "21";
 
 //variables
-let name = prompt("Inserisci il tuo nome","Nome utente");
+let firstName = prompt("Inserisci il tuo nome","Nome utente");
 let lastName = prompt("Inserisci il tuo cognome","Cognome utente");
 let favColor = prompt("Inserisci il tuo colore preferito","Colore preferito");
+
+//main
+let passwordDisplay = `La tua password è: 
+${firstName + lastName + favColor + pwEnd}  
+`
+
+document.getElementById("password").innerHTML = passwordDisplay
 
